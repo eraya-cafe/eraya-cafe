@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eraya Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 38px;
+      font-weight: 600;
+      margin: 0;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .menu-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      animation: slideUp 1s ease-out;
+    }
+
+    .button {
+      width: 260px;
+      padding: 15px 25px;
+      font-size: 18px;
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .button:hover {
+      background-color: #16a085;
+      transform: translateY(-3px) scale(1.03);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #888;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .button {
+        width: 80%;
+        font-size: 16px;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>☕ Selamat Datang di <strong>Eraya Cafe</strong></h1>
+  </header>
+
+  <div class="menu-container">
+    <a href="menu/makanan.png" class="button" target="_blank">🍛 Makanan Berat</a>
+    <a href="menu/minuman.png" class="button" target="_blank">☕ Minuman Coffee</a>
+    <a href="menu/noncoffe.png" class="button" target="_blank">🥤 Minuman Non-Coffee</a>
+    <a href="menu/snack.png" class="button" target="_blank">🍪 Snack</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Eraya Cafe — Dibuat dengan ❤️ untuk Anda
+  </footer>
+</body>
+</html>
